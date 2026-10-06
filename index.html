@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Worlds Smartest Website - TEXT INPUTTER</title>
+    </head>
+    <body>
+        <input type="text" id="text"><button onclick="gor()">Go</button>
+        <script>
+            function gor() {
+                var el = document.getElementById("text")
+                window.location.replace(window.location + "/endup?text="+el.value)
+            }
+        </script>
+    </body>
+</html>
