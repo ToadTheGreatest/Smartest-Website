@@ -6,13 +6,14 @@
     <body>
         <h1>The world smartest website says:</h1>
         <h3 id="text"></h3>
-        <script>
+        <script id="remove-me">
             const queryString = window.location.search;
             const urlParams = new URLSearchParams(queryString)
             const searchItem = urlParams.get("text")
             if (searchItem) {
                 document.getElementById("text").textContent = searchItem
             }
+            document.currentScript().remove()
         </script>
     </body>
 </html>
